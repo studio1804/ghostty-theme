@@ -12,13 +12,22 @@ if [ -z "$THEME_FILES" ]; then
 fi
 
 echo "Installing themes..."
+INSTALLED_THEMES=()
+
 for file in $THEME_FILES; do
     THEME_NAME=$(basename "$file")
     cp "$file" "$GHOSTTY_THEME_DIR/"
+    INSTALLED_THEMES+=("$THEME_NAME")
     echo "✔ Installed: $THEME_NAME"
 done
 
-echo -e "\n All themes installed successfully!"
-echo "📂 Installed themes in $GHOSTTY_THEME_DIR/:"
+if [ ${#INSTALLED_THEMES[@]} -gt 0 ]; then
+    echo -e "\n✅ Installed themes:"
+    for theme in "${INSTALLED_THEMES[@]}"; do
+        echo "📂 $theme"
+    done
+else
+    echo -e "\nNo new themes were installed."
+fi
 
-ls -1 "$GHOSTTY_THEME_DIR/"
+echo -e "\n All themes installed successfully!"
