@@ -19,12 +19,23 @@ Run the script to install or update themes
 ```
 
 This will:
-• Copy all .conf theme files from the themes/ directory into ~/.config/ghostty/themes/
-• List all installed themes after installation
 
-## Set Theme in config `(~/.config/ghostty/config)`
+- Copy all .conf theme files from the themes/ directory into ~/.config/ghostty/themes
+- List all installed themes after installation
+
+## Manually Install the theme files
+
+If you prefer to manually install the theme instead of running the script, follow these steps:
+
+1. Copy the .conf file from the themes/ directory to your Ghostty themes configuration folder:
+
+```bash
+mkdir -p ~/.config/ghostty/themes
+cp themes/studio1804-monochrome.conf ~/.config/ghostty/themes/
+```
+
+## Set Theme in config
 
 ```text
 theme = studio1804-monochrome.conf
 ```
-
