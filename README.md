@@ -2,7 +2,7 @@
 
 ![Monochrome Theme Preview](assets/monochrome.png)
 
-A sleek, **monochrome-inspired** theme for [Ghostty](https://github.com/sxyazi/ghostty)
+A sleek, **monochrome-inspired** theme for [Ghostty](https://github.com/ghostty-org/ghostty)
 
 ## Install Theme
 
