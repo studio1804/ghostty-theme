@@ -9,13 +9,13 @@ A sleek, **monochrome-inspired** theme for [Ghostty](https://github.com/ghostty-
 Make the script executable
 
 ```bash
-chmod +x install-theme.sh
+chmod +x install_theme.sh
 ```
 
 Run the script to install or update themes
 
 ```bash
-./install-theme.sh
+./install_theme.sh
 ```
 
 This will:
